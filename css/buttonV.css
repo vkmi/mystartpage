@@ -10,7 +10,7 @@
 		position: relative;
 		margin: 5px 10px;
 		display: list-item;
-		padding-bottom: 20;
+		/*padding-bottom: 20;*/
 	}
 	.button > a {
 		display: inline-block;
