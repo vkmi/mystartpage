@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Start Page</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/generalOL.css" />
+		<link rel="stylesheet" type="text/css" href="css/buttonV.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+			function startTime() {
+			    var today=new Date();
+			    var h=today.getHours();
+			    var m=today.getMinutes();
+			    var s=today.getSeconds();
+			    m = checkTime(m);
+			    document.getElementById('txt').innerHTML = h+":"+m;
+			    var t = setTimeout(function(){startTime()},500);
+			}
+
+			function checkTime(i) {
+			    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+			    return i;
+			}
+		</script>
+    </head>
+    <body onload="startTime()">
+        <main>
+        	<!--<font size="+3">Let's browse,  Mik</font>
+        	<nav class="pad1"></nav>-->
+        	<font size="+2"><div id="txt"></div></font>
+			<nav class="pad1"></nav>
+			<form action="https://www.google.it/search?q= " method="get" class="sfm">
+			    <input type="text" name="q" value="" id="sf">
+			</form>
+			<nav class="pad1"></nav>
+
+			<!--buttons-->
+			<ul class="buttonList">
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="">Social</a>
+					<ul>
+						<li><a href="http://facebook.com/" target="_blank"><font size="+1">Facebook</font></a></li>
+						<li><a href="http://epicnerding.altervista.org/search.php?search_id=unreadposts"><font size="+1">Epicnerding</font></a></li>
+						<li><a href="https://web.telegram.org/#/im"><font size="+1">Telegram</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">e-Mails</a>
+					<ul>
+						<li><a href="https://mail.google.com/mail/u/0/#inbox"><font size="+1">Gmail</font></a></li>
+						<li><a href="https://outlook.office365.com/owa/#path=/mail"><font size="+1">Uni</font></a></li>
+						<li><a href="https://us-mg6.mail.yahoo.com/neo/launch"><font size="+1">Yahoo</font></a></li>
+						<li><a href="https://dub127.mail.live.com/default.aspx?id=64855&owa=1&owasuffix=owa%2f"><font size="+1">Outlook</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">ToDo's</a>
+					<ul>
+						<li><a href="https://keep.google.com/keep/#home"><font size="+1">Keep</font></a></li>
+						<li><a href="https://trello.com"><font size="+1">Trello</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">Time Wasters</a>
+					<ul>
+						<li><a href="https://www.youtube.com/feed/subscriptions"><font size="+1">Youtube</font></a></li>
+						<li><a href="http://bagniproeliator.it"><font size="+1">Proeliator</font></a></li>
+						<li><a href="http://docmanhattan.blogspot.it"><font size="+1">Antro Atomico</font></a></li>
+						<li><a href="http://www.twitch.tv/directory/following"><font size="+1">Twitch</font></a></li>
+						<li><a href="https://imgur.com"><font size="+1">Imgur</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">WebComics</a>
+					<ul>
+						<li><a href="http://www.smbc-comics.com/#comic"><font size="+1">SMBC</font></a></li>
+						<li><a href="http://questionablecontent.net"><font size="+1">QC</font></a></li>
+						<li><a href="http://xkcd.com"><font size="+1">XKCD</font></a></li>
+						<li><a href="http://oglaf.com"><font size="+1">Oglaf</font></a></li>
+						<li><a href="http://deadpoolsupplier.imgur.com"><font size="+1">DeadPool Supplier</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">Photography</a>
+					<ul>
+						<li><a href="https://www.flickr.com"><font size="+1">Flickr</font></a></li>
+						<li><a href="http://www.deviantart.com/notifications/#view=deviations"><font size="+1">DA</font></a></li>
+						<li><a href="http://petapixel.com"><font size="+1">PetaPixel</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">Programming</a>
+					<ul>
+						<li><a href="https://bitbucket.org/VkMi"><font size="+1">BitBucket</font></a></li>
+						<li><a href="https://github.com/vkmi"><font size="+1">Github</font></a></li>
+						<li><a href="http://www.codecademy.com/learn"><font size="+1">Codecademy</font></a></li>
+						<li><a href="http://learncodethehardway.org"><font size="+1">LearnCodeTheHardWay</font></a></li>
+					</ul>
+				</li>
+
+				<li class="button buttonGreen buttonArrow">
+					<a href="#">Education</a>
+					<ul>
+						<li><a href="http://dia.units.it"><font size="+1">DIA</font></a></li>
+						<li><a href="https://www.coursera.org"><font size="+1">Coursera</font></a></li>
+						<li><a href="http://www.scopus.com/home.url"><font size="+1">Scopus</font></a></li>
+						<li><a href="https://nildeutenti.bo.cnr.it/index.php"><font size="+1">Nilde</font></a></li>
+					</ul>
+				</li>
+
+			</ul>
+        </main>
+    </body>
+    <div id="bgimgSinnel"></div>
+</html>
