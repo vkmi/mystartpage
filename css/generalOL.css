@@ -105,6 +105,7 @@ ul {
 #sf {
     background: url('http://static.tumblr.com/f1skqpy/Oxbn13qun/search_icon.png') #e0e0e0 left center no-repeat; 
     background-size: 20px 20px;
+    width: 200;
 }
 iframe {
 	border:none;
